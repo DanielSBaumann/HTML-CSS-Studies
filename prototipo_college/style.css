@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    background-color: rgb(245, 238, 238);
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(149, 161, 149);
+    width: 100%;
+    height: 200px;
+    /*
+    padding: 80px 45px;
+    margin: 5px;
+    */
+    border: none;
+    color: rgb(229, 245, 229);
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(195, 233, 195);
+    width: 100%;
+    height: 480px;
+    /*
+    padding: 20%;
+    margin: 5px;
+    */
+    border: none;
+    color: rgb(229, 245, 229);
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(80, 109, 80);
+    width: 100%;
+    height: 200px;
+    /*
+    padding: 3%;
+    margin: 5px;
+    */
+    border: none;
+    color: rgb(229, 245, 229);
+    text-align: center;
+    align-items: center;
+}
+
+#login_box{
+    background-color: seashell;
+    width: 400px;
+    height: 200px;
+    padding:80px 1%;
+    border: solid 1px red;
+    border-radius: 20px;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(40, 40, 175);
+    border-radius: 12px;
+    width: 56px;
+    height: 26px;
+    border: none;
+}
+
+#btn_entrar{
+    color: white;
+    font-size: large;
+    background-color: rgb(40, 40, 175);
+    border-radius: 12px;
+    width: 100px;
+    height: 46px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(156, 156, 236);
+    color: rgb(241, 233, 222);
+}
+
+#btn_entrar:hover{
+    background-color: rgb(156, 156, 236);
+    color: rgb(241, 233, 222);
+}
+
+#btn_entrar:active{
+    background-color: rgb(221, 86, 52);
+    color: rgb(241, 233, 222);
+}
+
+.input_values{
+    border: none;
+    background-color: rgb(238, 230, 230);
+    color: black;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#title_login{
+    color: rgb(20, 73, 20);
+}

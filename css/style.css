@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: seashell;
+}
+
+h1{
+    color: red;
+}
+
+a{
+    color:lightblue;
+}
+
+a:hover{
+    color: red;
+    background-color: #ccc;
+}
+a:active{
+    color: orange;
+}
+/*
+a:visited{
+    color: rgb(212, 209, 209);
+}
+*/

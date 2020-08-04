@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(48, 48, 77);
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center
+        }
+
+        #login_box {
+            background-color: seashell;
+            width: 400px;
+            height: 200px;
+            padding: 80px 1%;
+            border: solid 1px red;
+            border-radius: 20px;
+        }
+
+        #div_login {
+            background-image: url(C:\Users\USER\Desktop\image.png);
+        }
+
+        .btn {
+            color: white;
+            background-color: rgb(40, 40, 175);
+            border-radius: 12px;
+            width: 56px;
+            height: 26px;
+            border: none;
+        }
+
+        #btn_entrar {
+            color: white;
+            font-size: large;
+            background-color: rgb(40, 40, 175);
+            border-radius: 12px;
+            width: 100px;
+            height: 46px;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(156, 156, 236);
+            color: rgb(241, 233, 222);
+        }
+
+        #btn_entrar:hover {
+            background-color: rgb(156, 156, 236);
+            color: rgb(241, 233, 222);
+        }
+
+        #btn_entrar:active {
+            background-color: rgb(221, 86, 52);
+            color: rgb(241, 233, 222);
+        }
+
+        .input_values {
+            border: none;
+            background-color: rgb(238, 230, 230);
+            color: black;
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #title_login {
+            color: rgb(20, 73, 20);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div id="div_img">
+            <img src="C:\Users\USER\Desktop\image.png" alt="colégio sb">
+        </div>
+
+        <div id="login_box">
+
+            <h2 id="title_login">Faça Login</h2>
+            <br><br><br>
+            <form method="POST" action="ServLogin">
+                <input type="button" class="btn" value="Login">
+                <input class="input_values" type="text" id="login" name="login" placeholder="Ex:João da Silva" required>
+                <br><br>
+                <input type="button" class="btn" value="Senha">
+                <input class="input_values" type="text" id="senha" name="senha" placeholder="Ex:joa23@1997SILVA"
+                    required>
+                <br><br><br><br>
+                <input id="btn_entrar" type="submit" value="Entrar">
+            </form>
+
+        </div>
+    </nav>
+
+</body>
+
+</html>
