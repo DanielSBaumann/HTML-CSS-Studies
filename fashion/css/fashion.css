@@ -1,0 +1,168 @@
+/*
+para centralizar melhor
+zerar padding e margin do body
+uma div com o width(largura desejado)
+e margin:auto;
+*/
+body{
+    margin: 30px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+ul{
+    margin: 0 0 16px 360px;
+}
+ul,li{
+    display: inline-block;
+}
+li{
+    color: rgb(156, 154, 154);
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 5px 12px 5px;
+}
+a{
+    text-decoration: none;
+    color: rgb(156, 154, 154);
+    transition: color 0.4s linear;
+}
+li:hover{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+#img-hd{
+    margin: 16px 0 0 200px;
+}
+#head{
+    margin: 10px 220px;
+    height: auto;
+    width: auto;
+}
+
+#head header{
+    width: 1024px;
+    height: 60px;
+    background-color: rgb(16, 20, 28);
+}
+
+#sec-main{
+    margin: 40px 220px;
+    width: 1024px;
+    height: 600px;
+}
+
+#main-text{
+    height: 320px;
+    margin: 5px;
+    text-align: center;
+}
+
+#main-text h1{
+    display: inline-block;
+    margin-top: 35px;
+}
+
+#main-text p{
+    display: inline-block;
+    margin: 35px 12px 10px 12px;
+    line-height: 2;
+}
+
+#sec-main nav{
+    margin: 0;
+    height: 280px;
+}
+
+#img-box{
+    margin: 6px 94px;
+}
+
+#img-box div{
+    display: inline-block;
+}
+
+.img{
+    text-align: center;
+    margin: 12px;
+}
+
+.img h3,p{
+    margin: 2px;
+}
+
+.img h3{
+    color: rgb(63, 60, 60);
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.img h3:hover{
+    color: rgb(131, 34, 34);
+}
+
+.img p{
+    color: rgb(146, 145, 145);
+    font-size: 12px;
+}
+
+#art{
+    margin: 40px 220px;
+    height: 548px;
+    width: 1024px;
+    background-color: rgb(0, 61, 82);
+    background-image: url(../img/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: white;
+}
+
+#art h2{
+    display: inline-block;
+    margin: 70px 70px 12px 70px;
+    font-size: 50px;
+}
+
+#art p{
+    display: inline-block;
+    margin: 70px 70px 12px 70px;
+}
+
+#anuncio{
+    text-align: center;
+    margin: 60px 220px;
+    height: 40px;
+    width: 1024px;
+    color: rgb(0, 61, 82);
+}
+
+#anuncio h3{
+    display: inline-block;
+    font-size: 40px;
+    margin: 0 40px;
+}
+
+#map{
+    margin: 40px 220px;
+}
+
+footer{
+    text-align: center;
+    margin: 20px 220px;
+    height: 50px;
+    width: 1024px;
+    background-color: rgb(0, 61, 82);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer p{
+    display: inline-block;
+    margin-top: 18px;
+    text-shadow: 8px 8px 10px rgb(29, 28, 28);
+}
+

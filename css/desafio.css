@@ -18,7 +18,10 @@ body {
 
 header {
     grid-area: header;
+    /*
     background-image: url(C:/Users/USER/Desktop/HTML/UDEMY/img/books3.jpg);
+    */
+    background-image: url(../img/books3.jpg);
     background-size: cover;
     background-repeat: repeat;
     display: grid;
@@ -28,11 +31,16 @@ header {
         "down";
 }
 
+h1{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgb(44, 43, 43);
+}
+
 .btn-head {
     border: white solid 2px;
     margin: 5px;
     padding: 8px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.2);
     color: white;
     border-radius: 8px;
 }
@@ -173,4 +181,5 @@ footer {
     grid-area: footer;
     text-align: center;
     margin: 20px;
+    text-shadow: 3px 3px 5px rgb(44, 43, 43);
 }
