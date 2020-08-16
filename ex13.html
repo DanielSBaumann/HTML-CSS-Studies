@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel Baumann">
+    <meta name="description" content="Layout apresentação">
+    <meta name="key-words" content="html5, css3 , tecnologia">
+    <title>Listas</title>
+    <style>
+        li ol{
+            height: 0;
+            overflow: hidden;
+            transition: height .5s;
+        }
+        li:hover{
+            background-color: aqua;
+        }
+        li:hover ol{
+            height: 70px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <dl>
+        <dt>www</dt>
+        <dd>world wide web</dd>
+        <dd>sei la</dd>
+        <dt>javascript</dt>
+        <dd>script web</dd>
+    </dl>
+
+    <ul>
+        <li>
+            javascript
+            <ol>
+                <li>
+                    ecmascript
+                </li>
+                <li>
+                    typescript
+                </li>
+                <li>
+                    nodejs
+                </li>
+            </ol>
+        </li>
+        <li>java
+            <ol>
+                <li>hibernate</li>
+                <li>springboot</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>

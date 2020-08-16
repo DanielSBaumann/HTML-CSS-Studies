@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel Baumann">
+    <meta name="description" content="Layout apresentação">
+    <meta name="key-words" content="html5, css3 , tecnologia">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1>Exemplo de formulário</h1>
+
+    <form action="#" method="GET">
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <label for="mail">Email</label>
+            <input type="email">
+            <br>
+            <label for="number">Filhos</label>
+            <input type="number" min="0" max="100">
+            <br>
+            <label for="dt">Birth</label>
+            <input type="date" min="1950-01-30" max="2020-12-31">
+
+            <p>Sexo</p>
+            <label>
+                <input type="radio" name="sx" value="M">
+                Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="sx" value="F">
+                Feminino
+            </label>
+            <br>
+            <label>Estado</label>
+            <select name="estado" id="">
+                <option value="0">Selecione</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Area de interesse</legend>
+            <label>
+                <input type="checkbox" name="html" value="html">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="css" value="css">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="javascript" value="javascript">
+                JAVASCRIPT
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize: none;" name="msg" id="msg" cols="20" rows="10"></textarea>
+            <br>
+            <textarea style="resize: none;" name="msg" id="msg" cols="20" rows="10" disabled>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+                an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+            <br>
+            <label>
+                <input type="checkbox" name="aceito" value="aceito">
+                Li e aceito.
+            </label>
+        </fieldset>
+
+        <input type="submit" value="enviar">
+    </form>
+
+</body>
+
+</html>

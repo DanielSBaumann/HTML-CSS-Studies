@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel Baumann">
+    <meta name="description" content="Layout apresentação">
+    <meta name="key-words" content="html5, css3 , tecnologia">
+    <title>Forms</title>
+    <style>
+        .form-log{
+            width: 400px;
+            margin: 50px auto 0;
+        }
+        .form-log label{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .form-log{
+            background-color: rgb(228, 222, 222);
+        }
+        #user,#pass,.btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 12px auto;
+            font-family: sans-serif;
+        }
+        #user,#pass{
+            background-color: rgb(248, 239, 239);
+            border: none;
+        }
+        #user:focus,#pass:focus{
+            background-color: white;
+        }
+        .btn{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background-color: rgb(233, 123, 123);
+            border: none;
+            color: white;
+            transition: background-color linear 0.3s;
+        }
+        .btn:hover{
+            background-color: rgb(175, 37, 37);
+            color: rgb(211, 193, 193);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de formulário</h1>
+
+    <form action="#" method="POST" class="form-log">
+
+        <fieldset>
+
+            <legend>Login</legend>
+
+            <label for="user">Digite seu User</label>
+            <input type="text" id="user" name="user" autofocus>
+
+            <label for="pass">Digite sua senha</label>
+            <input type="password" id="pass" name="pass">
+
+            <input type="submit" value="Logar" class="btn">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
