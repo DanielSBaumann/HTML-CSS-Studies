@@ -5,9 +5,9 @@
 
 **_Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos_**
 
-:dancer::dancer: ## Fashion Project :dancer::dancer:
+ ## :dancer::dancer: Fashion Project :dancer::dancer:
 
-
+  -Pequeno projeto de loja fashion
 
 ![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/fashion.gif)
 
