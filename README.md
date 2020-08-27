@@ -11,3 +11,14 @@
 
 ![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/fashion.gif)
 
+
+ ## :star::v: Alguns exemplos de layout :v::star:
+
+![]
+
+![]
+
+
+ ## :computer::mega: Projeto Strata :computer::mega:
+
+![]
