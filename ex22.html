@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores avançados</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        article:nth-child(1) a{
+            text-decoration: none;
+            color: wheat;
+        }
+        article:nth-child(3) p{
+            text-decoration: none;
+            color: rgb(197, 196, 194);
+        }
+        article:nth-child(5) h3 + p{
+            text-decoration: none;
+            color: red;
+        }
+        article:nth-child(7) h3 ~ p{
+            text-decoration: none;
+            color: orange;
+        }
+        .destaque{
+            background: yellow;
+            color: black;
+        }
+        article:not(.destaque){
+            color: orange;
+        }
+        a[href="#"]{
+            opacity: .2;
+        }
+        a[href^="http"]{
+            color: red;
+        }
+        a[title="exercicio"]{
+            color: rgb(129, 206, 129);
+        }
+        a[href$=".pdf"]{
+            color: indigo;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+        <h3>titulo</h3>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>titulo</h3>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>titulo</h3>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article>
+        <p>antes</p>
+        <h3>titulo</h3>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article class="destaque">
+        <p>antes</p>
+        <h3>titulo</h3>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">just a link <b>negrito</b></a></p>
+    </article>
+
+    <ul>
+        <li><a href="#">fake link</a></li>
+        <li><a href="algo.pdf">fake link</a></li>
+        <li><a href="#">fake link</a></li>
+        <li><a href="http://serfrontend.com">link externo</a></li>
+        <li><a title="exercicio" href="ex21.html">link interno</a></li>
+    </ul>
+
+</body>
+
+</html>

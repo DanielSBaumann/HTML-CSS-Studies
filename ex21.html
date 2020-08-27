@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores avançados</title>
+    <style>
+        article a {
+            background: red;
+        }
+        article p > a{
+            background:lightblue;
+        }
+        article h3 + p{
+            background:yellow;
+        }
+        article p + p{
+            background: wheat;
+        }
+        header h3 ~ p{
+            background: violet;
+        }
+        a[title="hoje"]{
+            background: pink;
+        }
+        a[title^=p]{
+            background: lightgray;
+        }
+        a[title^=p]:hover{
+            background: rgb(201, 36, 36);
+        }
+        a[title$=a]{
+            background: rgb(248, 165, 165);
+        }
+        a[title$="a"]:hover{
+            background: rgb(127, 42, 148);
+        }
+        main:not(p){
+            color: red;
+            background: rgb(217, 230, 217);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>title</h3>
+        <p>
+            <a><b>uno</b></a>
+        </p>
+        <p>
+            <a><b>dois</b></a>
+        </p>
+        <p>
+            <a><b>tres</b></a>
+        </p>
+    </header>
+    <article>
+        <h3>title</h3>
+        <p>
+            <a><b>uno</b></a>
+        </p>
+        <p>
+            <a><b>dois</b></a>
+        </p>
+        <p>
+            <a><b>tres</b></a>
+        </p>
+    </article>
+    <main>
+        <h3>title</h3>
+        <p>
+            <a title="hoje"><b>uno</b></a>
+        </p>
+        <p>
+            <a title="per"><b>dois</b></a>
+        </p>
+        <p>
+            <a title="era"><b>tres</b></a>
+        </p>
+    </main>
+</body>
+
+</html>
