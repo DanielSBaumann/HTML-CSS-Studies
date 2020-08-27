@@ -14,11 +14,11 @@
 
  ## :star::v: Alguns exemplos de layout :v::star:
 
-![]
+![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/ex07.gif)
 
-![]
+![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/ex08.png)
 
 
  ## :computer::mega: Projeto Strata :computer::mega:
 
-![]
+![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/strata.gif)
