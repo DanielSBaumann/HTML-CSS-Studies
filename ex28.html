@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+            margin-right: 25px;
+        }
+        label input:focus + span{
+            /*
+            border: 1px solid red;
+            box-sizing: border-box;
+            */
+            box-shadow: 0 0 0 1px red;
+        }
+        label span{
+            height: 30px;
+            width: 60px;
+            border-radius: 16px;
+            background: rgb(189, 183, 183);
+            display: inline-block;
+        }
+        label span::before{
+            content: "";
+            height: 20px;
+            width: 20px;
+            background-color: #ddd;
+            border: none;
+            border-radius: 90px;
+            display: inline-block;
+            margin: 5px;
+            transition: all linear 0.2s;
+        }
+        label input:checked + span:before{
+            background-color: rgb(131, 125, 125);
+            transform: translate(30px,0);
+        }
+        input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Estrutura Básica</h1>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Esporte
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Politica
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Educação
+    </label>
+
+</body>
+
+</html>

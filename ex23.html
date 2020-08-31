@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores avançados</title>
+    <style>
+        input[type="checkbox"] {
+            width: 100px;
+            height: 100px;
+        }
+
+        input[type="checkbox"]:checked {
+            width: 10px;
+            height: 10px;
+        }
+
+        input[type="text"]:focus {
+            background-color: lightblue;
+        }
+
+        button:disabled {
+            background: red;
+        }
+
+        p {
+            color: red;
+        }
+
+        p:empty:before {
+            content: "paragrafo vazio é osso";
+        }
+        a:focus ,a:hover, div:focus{
+            color: red;
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <label><input type="checkbox" value="sim">Aceito o contrato</label>
+
+    <hr>
+
+    <button>vai</button>
+    <button disabled>volta</button>
+
+    <hr>
+
+    <p>paragrafo 1</p>
+    <p> </p>
+    <p></p>
+
+    <hr>
+
+    <input type="text">
+
+    <hr>
+
+    <ul>
+        <li><a href="#">fake</a></li>
+        <li><a href="#">fake</a></li>
+        <li><a href="#">fake</a></li>
+        <li><a href="#">fake</a></li>
+    </ul>
+
+    <hr>
+
+    <div tabindex="1">div 1</div>
+    <div tabindex="2">div 2</div>
+    <div tabindex="3">div 3</div>
+
+</body>
+
+</html>
