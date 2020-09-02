@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        @media screen and (max-width:600px){
+            body{
+                background-color: yellow;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .box{
+                background: white;
+                margin: 10% 2%;
+                height: 312px;
+                width: 96%;
+                position: relative;
+            }
+            .box1{
+                position: absolute;
+                background: #ccc;
+                height: 142px;
+                width: 92%;
+                margin:10px 16px;
+            }
+            .box2{
+                position: absolute;
+                background: #ccc;
+                height: 142px;
+                width: 92%;
+                margin:160px 16px;
+            }
+
+        }
+        @media screen and (min-width:601px){
+            body{
+                background-color: orange;
+            }
+            .box{
+                background: white;
+                margin: 6% 2%;
+                height: 612px;
+                width: 96%;
+                position: relative;
+            }
+            .box1{
+                position: absolute;
+                background: #ccc;
+                height: 580px;
+                width: 48%;
+                margin:16px 1.5%;
+            }
+            .box2{
+                position: absolute;
+                background: #ccc;
+                height: 580px;
+                width: 48%;
+                margin:16px 1.5% 16px 50.5%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Exemplo de media queries</h1>
+
+    <p>paragrafo qualquer</p>
+
+    <div class="box">
+
+        <div class="box1">div 1</div>
+        <div class="box2">div 2</div>
+
+    </div>
+
+</body>
+
+</html>
