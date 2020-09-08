@@ -22,3 +22,7 @@
  ## :computer::mega: Projeto Strata :computer::mega:
 
 ![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/strata.gif)
+
+ ## :hotel::hotel: Responsive Hotel :hotel::hotel:
+
+![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/strata.gif)
