@@ -23,6 +23,6 @@
 
 ![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/strata.gif)
 
- ## :hotel::hotel: Responsive Hotel :hotel::hotel:
+ ## :hotel::hotel: Responsive Hotel Project :hotel::hotel:
 
-![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/img/strata.gif)
+![](https://github.com/DanielSBaumann/HTML-CSS-Studies/blob/master/hotel/img/hotel.gif)
