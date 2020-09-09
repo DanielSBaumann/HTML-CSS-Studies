@@ -194,6 +194,9 @@ h1,h2,h3,h4,h5,h6{
         padding: 19em 15em 10em;
         background-position: center top;
     }
+    .icon-play{
+        height: 7em;
+    }
     .main-content{
         height: 400px;
         width: 100%;
