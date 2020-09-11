@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images</title>
+</head>
+
+<body>
+
+    <img src="http://lorempixel.com/400/200" srcset="http://lorempixel.com/600/300/ 600w,
+        http://lorempixel.com/800/400/ 800w" sizes="(min-width:480px) 33.33vw, 100vw" alt="texto alternativo">
+
+    <picture>
+        <source media="(min-width: 480px)" sizes="90vw"
+            srcset="rwd-img/1280.jpg 1280w, rwd-img/960.jpg 960w, rwd-img/480.jpg 480w">
+        <source sizes="100vw" srcset="rwd-img/822_mob.jpg 822w, rwd-img/640_mob.jpg 640w, rwd-img/320_mob.jpg 320w">
+        <img src="rwd-img/1280.jpg" alt="alternativo">
+    </picture>
+
+</body>
+
+</html>
