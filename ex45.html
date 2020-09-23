@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+
+    <style>
+        @keyframes slide{
+            0%,22%,100%{
+                transform: translateY(0);
+            }
+            25%,47%{
+                transform: translateY(-50vh);
+            }
+            50%,72%{
+                transform: translateY(-100vh);
+            }
+            75%,99%{
+                transform: translateY(-150vh);
+            }
+        }
+        body {
+            font-family: sans-serif;
+            color: white;
+            background: rgb(75, 74, 74);
+            margin: 0;
+        }
+
+        #slide-ex {
+            width: 80vw;
+            height: 50vh;
+            border: solid 10px white;
+            box-shadow: 0 0 10px black;
+            margin-left: 10vw;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        #slide-in {
+            width: 100%;
+            animation: slide 20s infinite cubic-bezier(.82,.29,1,0.04);
+            will-change: transform;
+            /*transform: translateY(-50vh);*/
+        }
+        #slide-in:hover {
+            width: 100%;
+            animation-play-state: paused;
+        }
+
+        #slide-in img {
+            display: block;
+            height: 50vh;
+            width: 100%;
+            /*object-fit: cover;*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Slide show</h2>
+
+    <div id="slide-ex">
+        <div id="slide-in">
+            <img src="img/slide1.jpg" alt="#">
+            <img src="img/slide2.jpg" alt="#">
+            <img src="img/slide3.jpg" alt="#">
+            <img src="img/slide4.jpg" alt="#">
+        </div>
+    </div>
+
+</body>
+
+</html>
