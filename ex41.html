@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        button{
+            border: none;
+            border-radius: 6px;
+        }
+        .calc{
+            margin: 30px auto;
+            padding: 1em;
+            font-size: 2em;
+            text-transform: uppercase;
+            background: #ccc;
+            width: 40%;
+            display: grid;
+            grid-gap: .5em;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: 140px repeat(5,60px);
+            border-radius: 12px;
+            border: none;
+            box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+        }
+        .visor{
+            font-size: 2em;
+            grid-column: 1/-1;
+            text-align: right;
+            padding: 0 24px 0;
+            background-image:linear-gradient(to top, rgb(236, 225, 225),rgb(192, 181, 181));
+            border-top: 2px solid rgb(240, 235, 235);
+            border-left: 2px solid rgb(240, 235, 235);
+            border-bottom: 2px solid rgb(116, 112, 112);
+            border-right: 2px solid rgb(116, 112, 112);
+            margin-bottom: 40px;
+            box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+        }
+        .zero,.plus{
+            background-image:linear-gradient(to top, rgb(236, 225, 225),rgb(192, 181, 181));
+            font-size: 1.4em;
+            border-top: 2px solid rgb(240, 235, 235);
+            border-left: 2px solid rgb(240, 235, 235);
+            border-bottom: 2px solid rgb(116, 112, 112);
+            border-right: 2px solid rgb(116, 112, 112);
+            box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+        }
+        .zero{
+            grid-column: 1/3;
+        }
+        .plus{
+            grid-column: 4/5;
+            grid-row: 5/7;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>My calculator</h2>
+
+    <div class="calc">
+
+        <button class="visor">0</button>
+
+        <button>AC</button><button>%</button><button>X</button><button>/</button>
+
+        <button>7</button><button>8</button><button>9</button><button>=</button>
+
+        <button>4</button><button>5</button><button>6</button><button>-</button>
+
+        <button>1</button><button>2</button><button>3</button><button class="plus">+</button>
+
+        <button class="zero">0</button><button>,</button>
+
+    </div>
+</body>
+
+</html>
