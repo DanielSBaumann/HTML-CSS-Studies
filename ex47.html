@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        alert("Olá!\nDigite suas notas : ");
+
+        let n1 = parseInt(prompt("nota 1"));
+        let n2 = parseInt(prompt("nota 2"));
+        let n3 = parseInt(prompt("nota 3"));
+        let n4 = parseInt(prompt("nota 4"));
+        
+        let media =(n1 + n2 + n3 + n4) / 4;
+
+        if(media > 6){
+            alert("Sua media é " + media + "\nParabens , vc foi aprovado!");
+        }else{
+            alert("Sua media é " + media + "\nVc foi reprovado!");
+        }
+    </script>
+</body>
+
+</html>
