@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background: yellow;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #p1,
+        #p2,
+        #p3 {
+            height: 220px;
+            width: 280px;
+            background-color: rgb(219, 107, 107);
+            position: relative;
+            margin: 80px auto;
+            border-radius: 12px;
+        }
+
+        p {
+            margin: 36px 110px;
+            position: absolute;
+        }
+
+        input[type=text] {
+            border: none;
+            border-radius: 14px;
+            position: absolute;
+            height: 30px;
+            width: 80%;
+            margin: 120px 30px;
+            text-align: center;
+        }
+
+        input[type=button] {
+            color: white;
+            border: none;
+            font-size: large;
+            background-color: transparent;
+            position: absolute;
+            width: 60%;
+            margin: 160px 50px;
+        }
+
+        #p2,
+        #p3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Advinhe!!</h1>
+    <div id="p1">
+        <p>Player 1</p>
+        <input type="text" id="p1-val">
+        <input type="button" value="try" id="btn-1">
+    </div>
+
+    <div id="p2">
+        <p>Player 2</p>
+        <input type="text" id="p2-val">
+        <input type="button" value="try" id="btn-2">
+    </div>
+
+    <div id="p3">
+        <p>Resultado</p>
+        <input type="button" id="btn-3">
+    </div>
+
+    <script>
+
+        let p1 = 0;
+        let p2 = 0;
+        let result = parseInt(Math.random() * 2);
+
+        $('#btn-1').click(function () {
+            p1 = parseInt($('#p1-val').val());
+            console.log(p1);
+            $('#p1').css('display', 'none');
+            $('#p2').css('display', 'block');
+        });
+
+        $('#btn-2').click(function () {
+
+            p2 = parseInt($('#p2-val').val());
+            console.log(p2);
+
+            $('#p2').css('display', 'none');
+            $('#p3').css('display', 'block');
+
+            console.log("resultado : " + result);
+
+            if (p1 === p2) {
+                $('#btn-3').val("Empate");
+            } else if (result === 0) {
+                if (p1 < p2) {
+                    $('#btn-3').val("Jogador 1 venceu!");
+                } else {
+                    $('#btn-3').val("Jogador 2 venceu!");
+                }
+            } else {
+                if (p1 < p2) {
+                    $('#btn-3').val("Jogador 2 venceu!");
+                } else {
+                    $('#btn-3').val("Jogador 1 venceu!");
+                }
+            }
+
+        });
+
+
+    </script>
+</body>
+
+</html>
